@@ -23,7 +23,7 @@
             <textarea name="journalEntry" id="journalEntry"></textarea>
         </fieldset>
         <fieldset>
-            <label for="mood">Journal Entry</label>
+            <label for="mood">Mood</label>
             <select>
                 <option value="ecstatic">ecstatic</option>
                 <option value="radical">radical</option>
@@ -35,12 +35,13 @@
         <button>Record Journal Entry</button>
     </form>
 
-    <article class="entryLog">
+    <article id='display-container' class="entryLog">
     </article>
     
+    
     <script src='scripts/data.js'></script>
-    <script src='scripts/journal.js'></script>
-    <script src='scripts/entriesDOM.js'></script>
-    <script src='scripts/entryComponent.js'></script>
+    <script src='scripts/domComponents.js'></script>
+    <script src='scripts/dombuilder.js'></script>
+    <script src='scripts/main.js'></script>
 </body>
 </html>
