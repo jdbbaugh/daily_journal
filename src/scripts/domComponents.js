@@ -12,29 +12,30 @@ const domComponents = {
     },
     createResourcesDocumentFragments(resourcesArray) {
   
-        let domFragments ={
+        let domFragments = {
              entry: document.createDocumentFragment()
             }
             
     
       resourcesArray.forEach(resourceObj => {
-        //   console.log(resourceObj.concept)
+          console.log(resourceObj.concept)
         const resourceSection = this.createDomElement("section", null, "resource-section");
         const linkElement = this.createDomElement("h2", resourceObj.concept, null);
         const entryDate = this.createDomElement("section", resourceObj.date, null);
         const mood = this.createDomElement('p', resourceObj.mood, null);
         const entry = this.createDomElement('p', resourceObj.entry, null);
-        resourceSection.qppendChild(linkElement);
-        resourceSection.qppendChild(entryDate);
-        resourceSection.qppendChild(mood);
-        resourceSection.qppendChild(entry);
+        // console.log(resourceSection, linkElement, entryDate, mood, entry)  JSON IS CONSOLE LOGGING HERE
+        resourceSection.appendChild(linkElement);
+        resourceSection.appendChild(entryDate);
+        resourceSection.appendChild(mood);
+        resourceSection.appendChild(entry);
 
-        domFragments.appendChild(resourceSection);
+        domFragments.entry.appendChild(resourceSection);
         
         
 
       });
     
-      return domFragments;
+      return domFragments.entry;
       }
   };

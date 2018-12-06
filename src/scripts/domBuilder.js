@@ -8,10 +8,10 @@ const domBuilder = {
     name: "Dom Builder Component",
     
     appendAllResources (fragmentsObj) {
-        let entriesContainer = document.querySelector(".entryLog");
+        let entriesContainer = document.querySelector("#display-container");
         
         
-        entriesContainer.appendChild(fragmentsObj.entry);
+        entriesContainer.appendChild(fragmentsObj);
         
       }
 
