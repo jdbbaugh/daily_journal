@@ -18,7 +18,7 @@ const domComponents = {
             
     
       resourcesArray.forEach(resourceObj => {
-          console.log(resourceObj.concept)
+          // console.log(resourceObj.concept)
         const resourceSection = this.createDomElement("section", null, "resource-section");
         const linkElement = this.createDomElement("h2", resourceObj.concept, null);
         const entryDate = this.createDomElement("section", resourceObj.date, null);

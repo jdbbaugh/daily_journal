@@ -17,7 +17,7 @@
         </fieldset>
         <fieldset>
             <label for="journalConcept">Concepts Covered</label>
-            <input type="text" name="journalConcept" id="journalConcept">
+            <input  name="journalConcept" id="journalConcept" type="text" min="1" max="5" required>
         </fieldset>
         <fieldset>
             <label for="journalEntry">Journal Entry</label>
@@ -25,7 +25,7 @@
         </fieldset>
         <fieldset>
             <label for="mood">Mood</label>
-            <select>
+            <select id="moods">
                 <option value="ecstatic">ecstatic</option>
                 <option value="radical">radical</option>
                 <option value="meh">meh</option>
